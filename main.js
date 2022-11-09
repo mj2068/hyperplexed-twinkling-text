@@ -16,5 +16,5 @@ for (const star of document.getElementsByClassName("magic-star")) {
   setTimeout(() => {
     animate(star);
     setInterval(() => animate(star), 1000);
-  }, index++ * (interval / 10));
+  }, index++ * (interval / 3));
 }
