@@ -71,13 +71,15 @@ h1 > .magic > .magic-star {
   left: var(--star-left);
   top: var(--star-top);
 
+  /* the following line will result in elements show their initial showing and
+     not being processed by javascript */
   /* animation: scale 2000ms ease forwards; */
 }
 
 h1 > .magic > .magic-star > svg {
   display: block;
   opacity: 0.9;
-  animation: rotate 5000ms linear infinite;
+  animation: rotate 2000ms linear infinite;
 }
 
 h1 > .magic > .magic-star > svg > path {

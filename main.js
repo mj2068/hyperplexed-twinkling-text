@@ -14,6 +14,7 @@ const animate = (star) => {
   // by this function, and they will show their static state
   star.style.display = "block";
 
+  // reset animation
   star.style.animation = "none";
   // DOM reflow
   star.offsetHeight;
