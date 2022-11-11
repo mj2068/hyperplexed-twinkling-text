@@ -22,7 +22,7 @@
   }
 
   50% {
-    transform: scale(4);
+    transform: scale(1.0);
   }
 }
 
@@ -30,8 +30,9 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -63,29 +64,25 @@ h1 > .magic {
 
 h1 > .magic > .magic-star {
   --size: clamp(20px, 1.5vw, 30px);
-  display: block;
+  display: none;
   position: absolute;
   width: var(--size);
   height: var(--size);
   left: var(--star-left);
   top: var(--star-top);
 
-  animation: scale 700ms ease forwards;
+  /* animation: scale 2000ms ease forwards; */
 }
 
 h1 > .magic > .magic-star > svg {
   display: block;
-  opacity: 0.7;
-  animation: rotate 1000ms linear infinite;
+  opacity: 0.9;
+  animation: rotate 5000ms linear infinite;
 }
 
 h1 > .magic > .magic-star > svg > path {
   fill: var(--g1);
 }
-
-/* h1 > .magic > .magic-star > svg > path {
-  fill: white;
-} */
 
 h1 > .magic > .magic-text {
   background: linear-gradient(
@@ -96,6 +93,7 @@ h1 > .magic > .magic-text {
     var(--g1)
   );
   -webkit-background-clip: text;
+  background-clip: "";
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
   background-size: 200%;
